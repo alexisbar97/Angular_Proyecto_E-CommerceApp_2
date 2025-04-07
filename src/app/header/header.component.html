@@ -1,0 +1,44 @@
+<header class="header-container">
+  <a class="ecommerce-name" routerLink="/">Mi Tienda</a>
+
+  <nav class="header-nav">
+    <div class="header-item menu" (click)="toggleMenu()">
+      <mat-icon>menu</mat-icon> Menú
+      <div class="dropdown-menu" [class.show]="isMenuOpen">
+        <div class="menu-item">Categoría 1</div>
+        <div class="menu-item">Categoría 2</div>
+        <div class="menu-item">Categoría 3</div>
+        <div class="menu-item">Categoría 4</div>
+        <div class="menu-item">Categoría 5</div>
+        <div class="menu-item">Categoría 6</div>
+        <div class="menu-item">Categoría 7</div>
+        <div class="menu-item">Categoría 8</div>
+        <div class="menu-item">Categoría 9</div>
+        <div class="menu-item">Categoría 10</div>
+      </div>
+    </div>
+
+    <div class="header-item search">
+      <mat-icon class="search-icon">search</mat-icon>
+      <input
+        type="text"
+        [(ngModel)]="searchQuery"
+        placeholder="Buscar productos..."
+        class="search-input"
+      >
+    </div>
+
+    <a class="header-item" routerLink="/login">
+      <mat-icon class="login-icon">person</mat-icon> Iniciar Sesión
+    </a>
+    <a class="header-item" routerLink="/my-purchases">
+      <mat-icon class="shopping-icon">shopping_bag</mat-icon> Mis Compras
+    </a>
+    <a class="header-item" routerLink="/wish-list">
+      <mat-icon class="favorite">favorite</mat-icon> Lista de Deseados
+    </a>
+    <a class="header-item" routerLink="/cart">
+      <mat-icon>shopping_cart</mat-icon> Carrito
+    </a>
+  </nav>
+</header>
