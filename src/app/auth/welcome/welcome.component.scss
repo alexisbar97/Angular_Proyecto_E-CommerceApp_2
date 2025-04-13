@@ -1,0 +1,44 @@
+.welcome-card {
+  background: rgba(0, 0, 0, 0.7) !important;
+  border-radius: 15px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  align-items: center;
+
+  .title {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+  .welcome-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .logout-button {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome-card {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,53 @@
+.login-card {
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+  text-align: center;
+
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+  .login-button {
+    width: 100%;
+    margin-top: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .link-text {
+    margin-top: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Fjalla One', sans-serif;
+
+    a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,17 @@
+<nav class="sidebar-menu" [class.open]="isMenuOpen">
+  <div *ngFor="let category of categories; let i = index"
+       class="menu-item"
+       (mouseenter)="showSubmenu(i)"
+       (mouseleave)="hideSubmenu()">
+    <span class="category-name">{{category.name}}</span>
+    <span class="arrow">›</span>
+
+    <div class="submenu" *ngIf="activeSubmenu === i">
+      <div *ngFor="let subcat of category.subcategories"
+           class="submenu-item"
+           (click)="navigateToSubcategory(subcat)">
+        {{subcat}}
+      </div>
+    </div>
+  </div>
+</nav>
